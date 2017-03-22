@@ -1,0 +1,46 @@
+.show-navbar {
+  height: $navbar-height;
+}
+
+.show-banner {
+  height: $show-banner-height;
+  position: absolute;
+  top: $navbar-height;
+  background-color: black; // change
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+// content position options
+.show-content {
+  position: absolute;
+  top: $show-content-position;
+  width: 100%;
+  justify-content: center;
+  bottom: $footer-height;
+}
+
+.show-content-simple { // simple is used when there's no banner
+  position: absolute;
+  top: $navbar-height;
+}
+
+// left section content options
+.show-content-left {
+  overflow: scroll;
+  background-color: blue; // change
+  height: 700px; // change
+}
+
+
+// right section class options
+.show-content-right {
+  overflow: hidden;
+  background-color: red; // change
+  height: 700px; // change
+}
+
+.show-content-right-simple { // simple is used when there's no banner
+  overflow: hidden;
+}
